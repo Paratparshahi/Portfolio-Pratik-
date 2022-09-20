@@ -25,6 +25,11 @@
     padding: 45px;
     display: flex;
 }
+
+.navbar ul {
+    display: flex;
+    Justify-content:space-around
+}
 .navbar  ul li{
    
     list-style: none;
@@ -71,6 +76,10 @@
     font-size: 65px;
     
 }
+.descme{
+    margin-left: 40px;
+    width: 800px;
+}
 .name{
     font-size: 50px;
     font-weight: bold;
@@ -100,7 +109,6 @@
     color: dodgerblue;
 }
 .contactform{
-    
     padding: 0 34px;
     padding-top: 144px;
 }
@@ -141,15 +149,14 @@
 .introduct h2{
     text-align: center;
 }.introduct img{
-    border-radius: 20%;
-    
+    border-radius: 20%; 
 }
 .descme{
     margin-top: 60px;
+    font-size: 20px;
 }
 .skills-section div img{
     height: 100px;
-    
 }
 .skills-section {
     display: grid;
@@ -306,3 +313,194 @@
    margin-left: 150px;
    margin-top: 30px;
 }
+@media screen and (max-width:700px) {
+    .navbar{
+        width: 100vw;
+        margin: 10px 20px;
+    }
+    .infoContainer{
+        /*background-color: rgba(202, 9, 128 );*/
+        height: 39vh;
+        width: 56vw;
+        margin: 144px auto;
+        display: flex;
+        justify-content: space-around;
+        color: aqua;
+    }
+    .devpic img{
+        height: 32vh;
+        
+    }
+    .introduct img{
+        border-radius: 20%; 
+        margin-top: 70px;
+        height: 200px;
+    }
+    .navbar  ul li{
+        list-style: none;
+        font-size: 20px;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    .hello{
+        font-size: 40px;
+        
+    }
+    .name{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .about{
+        font-size: 25px;
+    }
+    .devinfo{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Source Code Pro', monospace;
+        margin-left: 10px;
+    }
+    .moreabout{
+        font-size: 18px ;
+    }
+    .introduct{
+        display: block;
+        color: #006600;
+        width: 500px;
+    }
+    .descme{
+        max-width: 200px;
+        font-size: 13px;
+        margin-right: 5px;
+        height: 400px;
+    }
+    .navbar ul{
+        padding: 30px;
+        display: block;
+        margin-left: 30%;
+
+}
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    margin-left: 30%;
+}
+.skills-section div{
+    width: 110px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+}
+.row{
+    display: block;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+.contact-right input{
+    padding: 4px 18px;
+    border-radius: 8px;
+    
+    color: white;
+}
+.contact-right{
+    margin-top: 10px;
+}
+
+}
+@media screen and (max-width:450px) {
+    .navbar{
+        width: 100vw;
+        margin: 10px 20px;
+    }
+    .infoContainer{
+        /*background-color: rgba(202, 9, 128 );*/
+        height: 30vh;
+        width: 40vw;
+        margin: 144px auto;
+        display: flex;
+        justify-content: space-around;
+        color: aqua;
+    }
+    .devpic img{
+        height: 22vh;
+    }
+    .navbar  ul li{
+        list-style: none;
+        font-size: 20px;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    .hello{
+        font-size: 25px;
+        
+    }
+    .name{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .about{
+        font-size: 25px;
+    }
+    .devinfo{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Source Code Pro', monospace;
+        margin-left: 10px;
+    }
+    .moreabout{
+        font-size: 10px ;
+    }
+    .introduct{
+        display: block;
+        color: #006600;
+        width: 500px;
+    }
+    .descme{
+        margin-left: 20px;
+        margin: 20px;
+        font-size: 13px;
+    }
+    .navbar ul{
+        padding: 30px;
+        display: block;
+        margin-left: 30%;
+
+}
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+}
+.skills-section div{
+    width: 110px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+}#contact{
+    width: 300px;
+    margin: 5px;
+    
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.row{
+    display: block;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+.contact-right input{
+    padding: 4px 18px;
+    border-radius: 8px;
+    color: white;
+}
+.contact-right{
+    margin-top: 10px;
+}
+
+}
+
+  
