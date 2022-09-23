@@ -122,7 +122,7 @@
 @media (max-width:1000px){
     
     html{
-        font-size: 70%;
+        /* font-size: 70%; */
         width: 65%;
     }
     
@@ -466,8 +466,14 @@
         padding: 30px;
         display: block;
         margin-left: 30%;
-
-}
+        
+}.calendar{
+    width: 400px;
+  }
+  .js-calendar-graph-svg {
+     width: 5px;
+     width: 400px;
+  }
 .skills-section {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -500,7 +506,14 @@
 .contact-right{
     margin-top: 10px;
 }
+.contact-left p{
+    font-size: 13px;
+}
+}
 
+.js-calendar-graph-svg svg{
+   width: 5px;
+   width: 500px;
 }
 
   
