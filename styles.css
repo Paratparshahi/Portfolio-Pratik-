@@ -200,7 +200,9 @@
 .skillsmain h2{
     font-size: 45px;
 }
-
+.contact-left p{
+    font-size: 25px;
+}
 
 .Project-section {
     padding: 50px 0;
@@ -478,13 +480,24 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto;
+    margin-left: 100px;
 }
 .skills-section div{
     width: 110px;
     height: 200px;
     margin: 10px;
     overflow: hidden;
-}#contact{
+}.contact-right input{
+    padding: 3px 5px;
+    border-radius: 8px;
+    margin-left: 10px;
+    color: white;
+    width: 100px;
+}
+.contact-right textarea{
+    padding: 5px 15px;
+}
+#contact{
     width: 300px;
     margin: 5px;
     
@@ -507,8 +520,24 @@
     margin-top: 10px;
 }
 .contact-left p{
-    font-size: 13px;
+    font-size: 10px;
 }
+.contact-right textarea{
+    padding: 5px 20px;
+    width: 100px ;
+}
+.contact-right button{
+    color: white;
+    background-color: #ff004f;
+    padding: 5px 16px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+ }
+ .skillsmain h2{
+   margin-left: 150px;
+ }
 }
 
 .js-calendar-graph-svg svg{
