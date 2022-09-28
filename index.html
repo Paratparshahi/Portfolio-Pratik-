@@ -12,7 +12,9 @@
    rel="stylesheet"
    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
  />
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b4906ba0c9.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -30,10 +32,10 @@
     </div>
     <div class="main">
         
-        <div class="infoContainer">
+        <div class="infoContainer " data-aos="flip-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000">
             <div class="devinfo">
-                <div class="hello">Hi I am</div>
-                <div class="name">Pratik Kumar</div>
+                <div class="hello">Hi I am Pratik Kumar </div>
                 <div class="about">FrontEnd Developer , Enthusiastic Person</div>
                 <div class="moreabout">I am a Developer and I love to make frontend Websites</div>
                 <div class="buttons">
@@ -42,11 +44,11 @@
                 </div> 
             </div>
             <div class="devpic">
-                <img src="https://i.postimg.cc/pdXpkG3M/Pratik.png" alt="Pratik Kumar"  style="border-radius: 50%;">
+                <img src="https://i.postimg.cc/pdXpkG3M/Pratik.png" alt="Pratik Kumar"  >
             </div>
     </div>
 
-    <div class="introduct" id="introduction"> 
+    <div class="container " id="introduction" data-aos="flip-up" data-aos-duration="2000"> 
         <div class="Myintro" >
             <img src="https://i.postimg.cc/pdXpkG3M/Pratik.png" alt="Pratik Kumar">
             <h2>About me</h2>
@@ -54,21 +56,20 @@
         <div>
         <h5>
         <p class="descme">
-        I am a success driven,determined and enthusiastic frontend developer have knowledge
-         of Html,Css,JavaScript and Reacts framework and made many proects using it.
-         A passionate individual eager to learn new technologies to become a person with 
-         deep level of expertise in web developent and other creative fields.
-
-         I have good understanding of Frontend technologies and reacts made many 
-         frontend websites using it always wanted to showcase my skills when required.
-        </p>
+I am a success driven,determined and enthusiastic frontend developer have knowledge
+of Html,Css,JavaScript and Reacts framework and made many proects using it.
+A passionate individual eager to learn new technologies to become a person with 
+deep level of expertise in web developent and other creative fields.
+I have good understanding of Frontend technologies and reacts made many 
+frontend websites using it always wanted to showcase my skills when required.
+        </p> 
         </h5>
     </div>
     </div>
     <div class="skillsmain" id="Skills">
         <h2>MY SKILLS</h2>
-    <div class="skills-section">
-       <div>
+    <div class="skills-section ">
+       <div data-aos="fade-up-right">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
         <h3>HTML</h3>
         <p>I have good knowledge about HTML and its elements and know intelligently to use it. I have made many proJect using it.</p>
@@ -78,12 +79,12 @@
        <h3>CSS</h3>
        <p>I have good knowledge about css and knows many amazing styling to make the websites attractive</p>
        </div>
-       <div>
+       <div data-aos="fade-up-left">
         <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="">
         <h3>JavaScript</h3>
         <p>Good command over JavaScript and know the working functionalities and made some amazing interactive frontend websies using it</p>
        </div>
-       <div>
+       <div data-aos="fade-right">
         <img src="data:image/png;base64,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" alt="">
        <h3>ReactJs</h3>
        <p>Good knowledge about ReactJs and made many interactive frontend single page app using it</p>
@@ -93,48 +94,59 @@
         <h3>Bootstrap</h3>
         <p>Made website more attractive and added some awesome looking transition using Bootstrap</p>
        </div>
-       <div>
+       <div data-aos="fade-left">
         <img src="https://www.freecodecamp.org/news/content/images/2022/07/git-github.png" alt="">
         <h3>Git</h3>
         <p>Deployed many websites over Github using git and also added many non frontend proJects on github.</p>
        </div>
     </div>
 </div>
-<div class="Project-section" id="ProJects">
-    <div class="headpro">
-        <h1>My Projects</h1>
-        <div class="worklist">
-            <div class="work">
-                <img src="https://i.postimg.cc/rpxRDR6K/Screenshot7.png" alt="">
-                <div class="layer">
-                    <h3>Nature's Basket Clone</h3>
-                    <p>It is the clone of very famous website Nature's Basket
-                        here we can see different items and can filter search and sort and select item 
-                        and also can buy them by doing payment in payment section</p>
-                </div>
-               
-            </div>
-            
-            <div class="work">
-                <img src="https://i.postimg.cc/xCdktxJb/Screenshot8.png" alt="">
-                <div class="layer">
-                    <h3>Clone of Best Buy</h3>
-                    <p>It is the clone of very famous E-commerce website Bestbuy.com like the original website here also we can purchase,search,sort,filter products according to our preference, and can buy the product by doing payment online.</p>
-                </div>
-            </div>
-            <div class="btn-sec">
-                <a href="https://nature-basket-clone-488ad1.netlify.app/" target="_blank"><button>Go to Website</button></a>
-                <a href="https://github.com/premsg1610/Project-Nature-s-Basket-" target="_blank"><button>Go to Github</button></a>
-            </div>
-            <div class="btn-sec">
-                <a href="https://shiny-belekoy-e9e546.netlify.app/" target="_blank"><button>Go to Website</button></a>
-                <a href="https://github.com/masai-course/Pratik_fw17_0217/tree/master/unit-3/sprint-4/optional/Individual_Project_Buy.com" target="_blank"><button>Go to Github</button></a>
-            </div>
-        </div>
+<div id="ProJects">
+   <div class="individual_proJects reveal fade-left" data-aos="fade-left">
+     <div class="individual_img">
+     <img src="https://i.postimg.cc/rpxRDR6K/Screenshot7.png" alt="" >
     </div>
+    <div class="individual_desc">
+        <h3>Nature's Basket Clone</h3>
+        <pre> It is the clone of very famous website 
+Nature's Basket here we can see 
+different items and can filter search
+and sort and select item and also can
+buy them by doing payment in payment section
+            </pre>
+        <h4>React &nbsp; &nbsp; Redux &nbsp; &nbsp; Chakra-Ui &nbsp; &nbsp;JavaScript &nbsp; &nbsp; CSS</h4> 
+        
+        <div class="btn-sec container " >
+            <a href="https://nature-basket-clone-488ad1.netlify.app/" target="_blank"><button>Go to Website</button></a>
+            <a href="https://github.com/premsg1610/Project-Nature-s-Basket-" target="_blank"><button>Go to Github</button></a>
+        </div>   
+    </div>
+   </div>
+   <div class="individual_proJects reveal fade-right">
+    <div class="individual_img">
+    <img src="https://i.postimg.cc/xCdktxJb/Screenshot8.png " alt="" >
+   </div>
+   <div class="individual_desc">
+       <h3>Clone of Best Buy</h3>
+       <pre>   It is the clone of very famous 
+   E-commercewebsite Bestbuy.com like
+   the original website here also we can
+   purchase,search,sort,filter products 
+   according to our preference, and can
+   buy the product by doing payment online.
+           </pre>
+       <h4>React &nbsp; &nbsp; Redux &nbsp; &nbsp; Chakra-Ui &nbsp; &nbsp;JavaScript &nbsp; &nbsp; CSS</h4> 
+       
+       <div class="btn-sec container " >
+           <a href="https://shiny-belekoy-e9e546.netlify.app/" target="_blank"><button>Go to Website</button></a>
+           <a href="https://github.com/masai-course/Pratik_fw17_0217/tree/master/unit-3/sprint-4/optional/Individual_Project_Buy.com" target="_blank"><button>Go to Github</button></a>
+       </div>   
+   </div>
+  </div>
 </div>
+
 <!--------------------------------------Contact----------------------------------------------------------->
-<div id="contact">
+<div id="contact" data-aos="zoom-out">
     <div class="container-form">
         <div class="row">
             <div class="contact-left">
@@ -143,26 +155,38 @@
                 <div style="display: flex;">
                 <img src="https://i.postimg.cc/YS7LmN1T/Gmail-new-logo-icon-159149.png" alt="">
                 <p >pratikkumarshahi@gmail.com </p>
-            </div>
                 <br>
-                <i class="fa-solid fa-phone" style="color: #ff004f;"> &#160 &#160 8434914725</i>
-                
+                <br>
             </div>
-            <div class="contact-right">
-                <form action="">
-                    <label>Name</label>
-                    <input type="text" name="Name" placeholder="Your Name" required><br><br>
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="Give the email" required><br><br>
-                    <label style="top:0px">Message</label>
-                    <textarea rows="4" placeholder="Write Here ..."></textarea><br>
-                    <button >Submit</button>
-                </form>
+            <i class="fa-solid fa-phone" style="color: #ff004f;"> &#160 &#160 8434914725</i>
+            <br>
+            <br>
+            <div style="display: flex; ">
+                <i class="fa-brands fa-github "></i>
+                <p >https://github.com/Paratparshahi</p>
             </div>
+            <br>
+            <div style="display: flex; ">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>https://www.linkedin.com/pratik-kumar4a188b227</p>
+            </div>
+            
+        </div>
+        <div class="contact-right">
+            <form action="">
+                <label>Name</label>
+                <input type="text" name="Name" placeholder="Your Name" required><br><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Give the email" required><br><br>
+                <label style="top:0px">Message</label>
+                <textarea rows="4" placeholder="Write Here ..."></textarea><br>
+                <button >Submit</button>
+            </form>
         </div>
     </div>
   <h1 style="color: white; margin-bottom:30px;margin-left:35%;margin-top:20px"> Github-calendar</h1>
-    <div class="calendar" >
+    <div class="calendar" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
        
         <!-- Loading stuff -->
         Loading the data just for you.
@@ -181,6 +205,27 @@
          return fetch(`https://your-proxy.com/github?user=Paratparshahi`)
        }
     }).then(r => r.text())
+
+ function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 </script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>

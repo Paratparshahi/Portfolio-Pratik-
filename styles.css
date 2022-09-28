@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 *{
     margin:0;
     padding:0;
@@ -20,6 +21,11 @@
     display: flex;
     justify-content: space-around;
     color: aqua;
+    
+    box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
+    border-radius: 10%;
+    padding-bottom: 20px;
+    padding-top:20px ;
 }
 .navbar nav{
     padding: 45px;
@@ -37,12 +43,18 @@
     padding: 33px 0;
     font-weight: bold;
     
+    
 }
 .navbar  li a{
     text-decoration: none;
     color: black;
     position: relative;
     color: #FFFF00;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.Myintro{
+    padding: 23px;
+
 }
 .navbar ul li a::after{
     content: "";
@@ -53,8 +65,11 @@
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+
 }.navbar ul li a:hover::after{
      width: 100%;
+}.navbar ul li :hover{
+    background-color: blue;
 }
 .main{
    /* background-color: yellow; */
@@ -66,19 +81,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: '';
     margin-left: 30px;
+    background: none;
 }
 .devpic img{
-    height: 58vh;
+    height: 50vh;
+    border-radius: 50%;
+}
+.devpic {
+    background: none;
 }
 .hello{
-    font-size: 65px;
-    
+    font-size: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow:hidden;
+    white-space: nowrap;
+    animation: text 6s steps(35) infinite alternate;
+    background: none;
 }
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 20ch;
+    }
+}
+
 .descme{
     margin-left: 40px;
-    width: 800px;
+    color: #7d8c90;
+
 }
 .name{
     font-size: 50px;
@@ -86,13 +120,33 @@
 }
 .about{
     font-size: 40px;
-   
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow:hidden;
+    
+    white-space: nowrap;
+    animation: text1 6s steps(35) infinite alternate;
+    background: none;
+}
+@keyframes text1{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 16ch;
+    }
+    100%{
+       width: 34ch;
+    }
 }
 .moreabout{
     font-size: 29px ;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: none;
 }
 .buttons{
     margin-top: 32px;
+    background: none
+    ;
 }
 .btn{
     padding: 9px 14px;
@@ -154,7 +208,74 @@
 .descme{
     margin-top: 60px;
     font-size: 20px;
+    line-height: 40px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asa", sans-serif;
+}
+body {
+  background: #42455a;
+}
+
+@media (max-width: 900px) {
+  
+}
+.reveal {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    margin-left: 20%;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 .skills-section div img{
     height: 100px;
 }
@@ -162,15 +283,17 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
+    gap: 30px;
 }
 .skills-section div{
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    
+   
+    margin-left: 20px;
     text-align: center;
     color: aliceblue;
-    width: 200px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 300px;
+    box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
     padding: 30px 40px;
     line-height: 25px;
     border-radius: 5%;
@@ -201,55 +324,10 @@
     font-size: 45px;
 }
 .contact-left p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.Project-section {
-    padding: 50px 0;
-   
-}
-.Project-section h1{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.worklist{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
-    
-}
-.work{
-    border-radius: 10px;
-    position: relative;
-    
-}
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: all ease-in-out 0.5s;
-}
-.layer{
-    line-height: 25px;
-    color: aqua;
-    background:linear-gradient(rgba(0,0,0,0.5),#ff004f);
-    border-radius: 10px;
-    border: 1px solid red;
-    overflow: hidden;
-    position: absolute;
-    top:100%;
-    left:0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 0;
-    transition: all ease-in-out 0.5s;
-    text-align: center;
-}
+
 .btn-sec button{
     color: white;
     border: 1px solid #ff004f;
@@ -267,20 +345,8 @@
 .btn-sec{
     text-align: center;
 }
-.layer P{
-    background: none;
-}
-.layer h3{
-    background: none;
-}
-.work:hover .layer{
-   height: 100%;
-    transform: translateY(-90%);
-    scale: 1.1;
-}
-.work:hover img{
-    scale: 1.1;
-}
+
+
 .contact-left{
     color: white;
     
@@ -364,6 +430,7 @@
     }
     .moreabout{
         font-size: 18px ;
+        background: none;
     }
     .introduct{
         display: block;
@@ -371,10 +438,10 @@
         width: 500px;
     }
     .descme{
-        max-width: 200px;
+        max-width: auto;
         font-size: 13px;
         margin-right: 5px;
-        height: 400px;
+        height: auto;
     }
     .navbar ul{
         padding: 30px;
@@ -382,6 +449,7 @@
         margin-left: 30%;
 
 }
+
 .skills-section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -424,8 +492,21 @@
         justify-content: space-around;
         color: aqua;
     }
+    .reveal.active {
+        opacity: 1;
+        display: block;
+      }
+    .reveal {
+        position: relative;
+        opacity: 0;
+        display: block;
+        margin-left: 20%;
+      }
     .devpic img{
         height: 22vh;
+    }
+    .individual_proJects{
+        display: block;
     }
     .navbar  ul li{
         list-style: none;
@@ -435,7 +516,6 @@
     }
     .hello{
         font-size: 25px;
-        
     }
     .name{
         font-size: 20px;
@@ -450,6 +530,9 @@
         justify-content: center;
         font-family: 'Source Code Pro', monospace;
         margin-left: 10px;
+    }
+    .contact-left p{
+        font-size: 10px;
     }
     .moreabout{
         font-size: 10px ;
@@ -469,7 +552,8 @@
         display: block;
         margin-left: 30%;
         
-}.calendar{
+}
+.calendar{
     width: 400px;
   }
   .js-calendar-graph-svg {
@@ -538,11 +622,71 @@
  .skillsmain h2{
    margin-left: 150px;
  }
+ .contact-left i{
+    font-size: 13px;
+  }
+  #introduction{
+    
+    display: block;
 }
 
+}
+.contact-left i{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.fa-gihub{
+    font-size: 25px;
+}
 .js-calendar-graph-svg svg{
    width: 5px;
    width: 500px;
+}
+.individual_img img{
+    overflow: hidden;
+    max-width: 500px;
+    height: auto;
+}
+
+.individual_desc{
+    color: gold;
+    margin: 5%;
+    text-align: center;
+    border-radius: 20px;
+    padding-right: 12px;
+}
+.individual_desc>pre{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 25px;
+    font-size: 20px;
+    color:aqua;
+    letter-spacing: 2px;
+}
+.individual_desc h3{
+    font-size: 25px;
+}
+.individual_proJects{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    width: auto;
+    width: 1000px;
+    border-radius: 30px;
+}
+.Myintro h2{
+    color: #ff004f;
+}
+#introduction{
+    box-shadow: lightgrey 3px 3px 5px;
+    margin-left: 70px;
+    width: auto;
+    border-radius: 5%;
+    display: flex;
+}
+#introduction img{
+    border-radius: 20px;
+    height: 300px;;
 }
 
   
