@@ -41,7 +41,8 @@
 }
 .navbar ul {
     display: flex;
-    Justify-content:space-around
+    Justify-content:end;
+    margin-right: 100px;
 }
 .navbar  ul li{
    
@@ -541,6 +542,9 @@ body {
     .navbar{
         width: 100vw;
         margin: 10px 20px;
+    }
+    .container-form{
+        margin-top: 100px;
     }
     #introduction img{
         border-radius: 20px;
