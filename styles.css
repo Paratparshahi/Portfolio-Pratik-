@@ -506,7 +506,7 @@ body {
     .navbar ul{
         padding: 30px;
         display: block;
-        margin-left: 30%;
+        margin-left: 10%;
 
 }
 
@@ -546,6 +546,7 @@ body {
     .container-form{
         margin-top: 100px;
     }
+    
     #introduction img{
         border-radius: 20px;
         height: 150px;
@@ -556,10 +557,11 @@ body {
      }
     .infoContainer{
         /*background-color: rgba(202, 9, 128 );*/
-        height: 30vh;
-        width: 40vw;
+        height: auto;
+        width: auto;
         margin: 144px auto;
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-around;
         color: aqua;
     }
@@ -627,11 +629,11 @@ body {
     .navbar ul{
         padding: 30px;
         display: block;
-        margin-left: 30%;
+        margin-left: 10%;
         
 }
 .calendar{
-    width: 400px;
+    width: auto;
   }
   .js-calendar-graph-svg {
      width: 5px;
