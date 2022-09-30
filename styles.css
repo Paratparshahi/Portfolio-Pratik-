@@ -38,6 +38,7 @@
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     width: auto;
     border-radius: 30px;
+    padding: 20px 20px;
 }
 .navbar ul {
     display: flex;
@@ -55,7 +56,7 @@
 }
 .individual_img img{
     overflow: hidden;
-    
+    margin-top: 40px;
     height: auto;
     width: 500px;
 }
@@ -567,9 +568,10 @@ body {
     }
     .individual_img img{
         overflow: hidden;
-        margin-left: 10px;
+        margin-left: 0px;
         height: auto;
         width: 100%;
+        top:20%
     }
     .reveal.active {
         opacity: 1;
@@ -633,11 +635,11 @@ body {
         
 }
 .calendar{
-    width: auto;
+    width: 200px;
   }
   .js-calendar-graph-svg {
-     width: 5px;
-     width: 400px;
+    
+     width: 200px;
   }
 .skills-section {
     display: grid;
