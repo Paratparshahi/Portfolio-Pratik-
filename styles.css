@@ -31,7 +31,14 @@
     padding: 45px;
     display: flex;
 }
-
+.individual_proJects{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    width: auto;
+    border-radius: 30px;
+}
 .navbar ul {
     display: flex;
     Justify-content:space-around
@@ -44,6 +51,12 @@
     font-weight: bold;
     
     
+}
+.individual_img img{
+    overflow: hidden;
+    
+    height: auto;
+    width: 500px;
 }
 .navbar  li a{
     text-decoration: none;
@@ -204,6 +217,10 @@
 #contact{
     margin-top: 100px;
 }
+#introduction img{
+    border-radius: 20px;
+    height: 300px;
+}
 @media (max-width:1000px){
     
     html{
@@ -240,6 +257,14 @@
     margin-top: 60px;
     font-size: 20px;
     line-height: 40px;
+
+}
+#introduction{
+    box-shadow: lightgrey 3px 3px 5px;
+    margin-left: 70px;
+    width: auto;
+    border-radius: 5%;
+    display: flex;
 }
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 * {
@@ -252,9 +277,7 @@ body {
   background: #42455a;
 }
 
-@media (max-width: 900px) {
-  
-}
+
 .reveal {
     position: relative;
     opacity: 0;
@@ -284,6 +307,7 @@ body {
       opacity: 1;
     }
   }
+  
   @keyframes fade-left {
     0% {
       transform: translateX(-100px);
@@ -417,6 +441,10 @@ body {
         width: 100vw;
         margin: 10px 20px;
     }
+    #introduction{
+        display: block; 
+       margin: opx;
+     }
     .infoContainer{
         /*background-color: rgba(202, 9, 128 );*/
         height: 39vh;
@@ -509,11 +537,19 @@ body {
 }
 
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     .navbar{
         width: 100vw;
         margin: 10px 20px;
     }
+    #introduction img{
+        border-radius: 20px;
+        height: 150px;
+    }
+    #introduction{
+        display: block; 
+       margin: opx;
+     }
     .infoContainer{
         /*background-color: rgba(202, 9, 128 );*/
         height: 30vh;
@@ -522,6 +558,12 @@ body {
         display: flex;
         justify-content: space-around;
         color: aqua;
+    }
+    .individual_img img{
+        overflow: hidden;
+        margin-left: 10px;
+        height: auto;
+        width: 100%;
     }
     .reveal.active {
         opacity: 1;
@@ -656,8 +698,7 @@ body {
  .contact-left i{
     font-size: 13px;
   }
-  #introduction{
-    
+#introduction{
     display: block;
 }
 
@@ -674,11 +715,7 @@ body {
    width: 5px;
    width: 500px;
 }
-.individual_img img{
-    overflow: hidden;
-    max-width: 500px;
-    height: auto;
-}
+
 
 .individual_desc{
     color: gold;
@@ -687,7 +724,7 @@ body {
     border-radius: 20px;
     padding-right: 12px;
 }
-.individual_desc>pre{
+.individual_desc>p{
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 25px;
     font-size: 20px;
@@ -697,28 +734,11 @@ body {
 .individual_desc h3{
     font-size: 25px;
 }
-.individual_proJects{
-    display: flex;
-    margin-left: 10%;
-    margin-top: 10%;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    width: auto;
-    width: 1000px;
-    border-radius: 30px;
-}
+
 .Myintro h2{
     color: #ff004f;
 }
-#introduction{
-    box-shadow: lightgrey 3px 3px 5px;
-    margin-left: 70px;
-    width: auto;
-    border-radius: 5%;
-    display: flex;
-}
-#introduction img{
-    border-radius: 20px;
-    height: 300px;;
-}
+
+
 
   
