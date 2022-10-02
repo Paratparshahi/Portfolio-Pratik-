@@ -245,6 +245,14 @@
     }
     
 }
+.Github-Stats{
+    margin-left: 30%;
+    width: auto;
+}
+.Github-Stats img{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
 .introduct{
     display: flex;
     margin: 20px;
@@ -548,7 +556,10 @@ body {
     .container-form{
         margin-top: 100px;
     }
-    
+    .skills-section div img{
+        height: auto;
+        width: 90%;
+    }
     #introduction img{
         border-radius: 20px;
         height: 150px;
@@ -566,6 +577,13 @@ body {
         flex-direction: column-reverse;
         justify-content: space-around;
         color: aqua;
+    }
+    .Github-Stats{
+        
+        width: auto;
+    }
+    .Github-Stats img{
+        width: 95%;
     }
     .individual_img img{
         overflow: hidden;
@@ -652,7 +670,7 @@ body {
     height: auto;
     margin: 10px;
     overflow: hidden;
-    padding: 10px 15px;
+    padding: 10px 10px;
 }.contact-right input{
     padding: 3px 5px;
     border-radius: 8px;
