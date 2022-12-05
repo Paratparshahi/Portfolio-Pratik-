@@ -4,8 +4,7 @@
 *{
     margin:0;
     padding:0;
-    background-color: black;
-    
+    background-color: white;
 }
 .navbar{
     
@@ -20,9 +19,8 @@
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
-    color: aqua;
-    
-    box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
+    color: purple;
+    background: #f0f8ef;
     border-radius: 10%;
     padding-bottom: 20px;
     padding-top:20px ;
@@ -33,12 +31,15 @@
 }
 .individual_proJects{
     display: flex;
-    margin-left: 10%;
     margin-top: 10%;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     width: auto;
     border-radius: 30px;
     padding: 20px 20px;
+    font-family: cursive;
+    background: #f0f8ef;
+    /* Created with https://www.css-gradient.com */
+/* Created with https://www.css-gradient.com */
 }
 .navbar ul {
     display: flex;
@@ -58,20 +59,28 @@
     overflow: hidden;
     margin-top: 40px;
     height: auto;
-    width: 500px;
+    width: 400px;
 }
+.individual_img {
+   background: none;
+}
+
 .navbar  li a{
     text-decoration: none;
     
     position: relative;
-    color: #FFFF00;
+    color: purple;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: 10px ;
     background: linear-gradient();
 }
+.navbar li a:hover{
+    background-color: purple;
+    color: white;
+}
 .Myintro{
     padding: 23px;
-
+    border: 1px solid;
 }
 .navbar ul li a:hover::after{
      width: 100%;
@@ -87,8 +96,8 @@
     left: 0%;
     transition: all 0.5s ease-in-out;
     transform-origin: left;
-    border-top: 2px solid yellow;
-    border-left: 2px solid yellow;
+    border-top: 2px solid purple;
+    border-left: 2px solid purple;
     position: absolute;
 }
 .navbar ul li a::after{
@@ -99,10 +108,9 @@
     right: 0%;
     transition: all 0.3s ease-in-out;
     transform-origin: left;
-    border-bottom: 2px solid yellow;
-    border-right: 2px solid yellow;
+    border-bottom: 2px solid purple;
+    border-right: 2px solid purple;
     position: absolute
-
 }
 .navbar ul li a:hover::after{
     width: 10%;
@@ -116,8 +124,9 @@
 }
 .main{
    /* background-color: yellow; */
-    width: 85vw;
-    padding: 20px;
+   width: 85vw;
+   padding: 20px;
+   margin: auto;
 }
 
 .devinfo{
@@ -125,7 +134,7 @@
     flex-direction: column;
     justify-content: center;
     font-family: '';
-    margin-left: 30px;
+    
     background: none;
 }
 .devpic img{
@@ -154,8 +163,7 @@
 
 .descme{
     margin-left: 40px;
-    color: #7d8c90;
-
+    color: purple;
 }
 .name{
     font-size: 50px;
@@ -165,7 +173,6 @@
     font-size: 40px;
     font-family: 'Roboto Condensed', sans-serif;
     overflow:hidden;
-    
     white-space: nowrap;
     animation: text1 6s steps(35) infinite alternate;
     background: none;
@@ -195,7 +202,7 @@
     padding: 9px 14px;
     border-radius: 22px;
     color: white;
-    background-color: dodgerblue;
+    background-color: purple;
     font-weight: bold;
     font-size: 21px;
     margin: 0 3px;
@@ -203,7 +210,7 @@
 }
  .btn:hover{
     background-color: white;
-    color: dodgerblue;
+    color: purple;
 }
 .contactform{
     padding: 0 34px;
@@ -216,34 +223,34 @@
 .contactform div{
     padding: 10px 0;
 }
-#contact{
+/* #contact{
     margin-top: 100px;
-}
+    background: #f0f8ef;
+} */
 #introduction img{
-    border-radius: 20px;
-    height: 300px;
+height: 40vh;
+border: 1px solid;
+}
+.btn-sec{
+    background: none;
 }
 @media (max-width:1000px){
-    
     html{
         /* font-size: 70%; */
         width: 65%;
     }
-    
 }
 @media (max-width:800px){
     html{
         font-size: 50%;
         width: 45%;
     }
-    
 }
 @media (max-width:500px){
     html{
         font-size: 50%;
         width: 30%;
     }
-    
 }
 .Github-Stats{
     margin-left: 30%;
@@ -263,18 +270,23 @@
 }.introduct img{
     border-radius: 20%; 
 }
+.aboutme{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .descme{
     margin-top: 60px;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 40px;
-
+    word-spacing: 20px;
+    font-family: cursive;
+    
 }
 #introduction{
-    box-shadow: lightgrey 3px 3px 5px;
-    margin-left: 70px;
     width: auto;
-    border-radius: 5%;
     display: flex;
+    background-color:  #f0f8ef;
 }
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 * {
@@ -298,7 +310,7 @@ body {
   .reveal.active {
     opacity: 1;
   }
-  .active.fade-bottom {
+  .active-de-bottom {
     animation: fade-bottom 1s ease-in;
   }
   .active.fade-left {
@@ -352,32 +364,33 @@ body {
 }
 .skills-section div{
     margin: auto;
-    
-   
     margin-left: 20px;
     text-align: center;
-    color: aliceblue;
+    color: rgb(25, 17, 17);
     width: 300px;
     box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
     padding: 30px 40px;
     line-height: 25px;
     border-radius: 5%;
     transition: transform 0.5s;
-    background: #262626;
+    background: #f0f8ef;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .skills-section div:hover{
-    background-color: #ff004f;
+    background-color: rgb(219, 57, 219);
     transform: translateY(-20px);
-    
 }
+
 .skills-section p{
     background: none;
+    font-family: cursive;
 }
 .skills-section p:hover{
-    background-color: #ff004f;
+    background-color: rgb(219, 57, 219)
 }
 .skills-section h3{
     background:none;
+    font-family: cursive;
 }
 .skillsmain{
     margin-top: 100px;
@@ -390,11 +403,12 @@ body {
 }
 .contact-left p{
     font-size: 20px;
+    background: none;
 }
 
 
 .btn-sec button{
-    color: white;
+    color: purple;
     border: 1px solid #ff004f;
     margin-top: 40px;
     text-align: center;
@@ -404,17 +418,11 @@ body {
 } 
 .btn-sec button:hover{
     color: white;
-    background-color: turquoise;
+    background-color: purple;
     transform: translateY(-7px);
 }
 .btn-sec{
     text-align: center;
-}
-
-
-.contact-left{
-    color: white;
-    
 }
 .contact-left>div>img{
     height: 30px;
@@ -424,19 +432,23 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    background: #f0f8ef;
 }
 .contact-right label{
     color: white;
     text-align: center;
+    background: none;
 }
 .contact-right input{
     padding: 8px 32px;
     border-radius: 8px;
     margin-left: 20px;
     color: white;
+    background: none;
 }
 .contact-right textarea{
     padding: 5px 30px;
+    background: none;
 }
 .contact-right button{
    color: white;
@@ -445,6 +457,9 @@ body {
    border-radius: 5px;
    margin-left: 150px;
    margin-top: 30px;
+}
+.contact-right form{
+    background: #f0f8ef;
 }
 @media screen and (max-width:700px) {
     .navbar{
@@ -463,6 +478,7 @@ body {
         display: flex;
         justify-content: space-around;
         color: aqua;
+        
     }
     .devpic img{
         height: 32vh;
@@ -536,6 +552,7 @@ body {
     display: block;
     margin-top: 30px;
     margin-left: 40%;
+    background: none;
 }
 .contact-right input{
     padding: 4px 18px;
@@ -555,6 +572,7 @@ body {
     }
     .container-form{
         margin-top: 100px;
+        background: #f0f8ef;
     }
     .skills-section div img{
         height: auto;
@@ -634,6 +652,7 @@ body {
     .contact-left p{
         font-size: 10px;
     }
+
     .moreabout{
         font-size: 10px ;
     }
@@ -671,11 +690,12 @@ body {
     margin: 10px;
     overflow: hidden;
     padding: 10px 10px;
+    font-family: cursive;
 }.contact-right input{
     padding: 3px 5px;
     border-radius: 8px;
     margin-left: 10px;
-    color: white;
+    color: black;
     width: 100px;
 }
 .contact-right textarea{
@@ -684,6 +704,8 @@ body {
 #contact{
     width: 300px;
     margin: 5px;
+    background: #f0f8ef;
+
     
 }
 .worklist{
@@ -694,24 +716,27 @@ body {
     display: block;
     margin-top: 30px;
     margin-left: 30%;
+    background: none;
 }
 .contact-right input{
     padding: 4px 18px;
     border-radius: 8px;
-    color: white;
+    
 }
 .contact-right{
     margin-top: 10px;
+    background: none;
 }
 .contact-left p{
     font-size: 10px;
+    background: none;
 }
 .contact-right textarea{
     padding: 5px 20px;
     width: 100px ;
 }
 .contact-right button{
-    color: white;
+    
     background-color: #ff004f;
     padding: 5px 16px;
     border-radius: 5px;
@@ -723,7 +748,7 @@ body {
    text-align: center;
  }
  .contact-left i{
-    font-size: 13px;
+    font-size: 20px;
   }
 #introduction{
     display: block;
@@ -732,11 +757,15 @@ body {
 }
 .contact-left i{
   margin-right: 15px;
-  font-size: 20px;
-  color: white;
+  font-size: 30px;
+  color: purple;
+  background: none;
+}
+.contact-left{
+    background: none;
 }
 .fa-gihub{
-    font-size: 25px;
+    font-size: 35px;
 }
 .js-calendar-graph-svg svg{
    width: 5px;
@@ -745,27 +774,35 @@ body {
 
 
 .individual_desc{
-    color: gold;
+    color: #ff004f;
     margin: 5%;
     text-align: center;
     border-radius: 20px;
     padding-right: 12px;
+    font-family: cursive;
+    background: none;
 }
 .individual_desc>p{
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 25px;
     font-size: 20px;
-    color:aqua;
+    color:purple;
     letter-spacing: 2px;
+    font-family: cursive;
+    background: none;
 }
 .individual_desc h3{
     font-size: 25px;
+    font-family: cursive;
+    background: none;
 }
 
 .Myintro h2{
     color: #ff004f;
 }
-
+.contact-left h1{
+    background: #f0f8ef;
+}
 
 
   
