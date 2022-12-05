@@ -394,12 +394,13 @@ body {
 }
 .skillsmain{
     margin-top: 100px;
-    color: white;
+    
     text-align: center;
     
 }
 .skillsmain h2{
     font-size: 45px;
+    font-family: cursive;
 }
 .contact-left p{
     font-size: 20px;
@@ -746,6 +747,7 @@ body {
  }
  .skillsmain h2{
    text-align: center;
+   color: black;
  }
  .contact-left i{
     font-size: 20px;
