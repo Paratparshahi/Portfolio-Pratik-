@@ -30,6 +30,7 @@
             <li><a href="#Skills"> Skill</a></li>
             <li><a href="#contact"> Contact me </a></li>
             <li><a href="https://i.ibb.co/bLzSTdB/Navy-White-Modern-Professional-Resume-2.jpg" download>Resume</a></li>
+            <li><a href="https://i.postimg.cc/vmCg7dpp/Navy-White-Modern-Professional-Resume-2-1.jpg" download>link</a></li>
            
             
         </ul>
@@ -42,7 +43,7 @@
                 <div class="about">FrontEnd Developer , Enthusiastic Person</div>
                 <div class="moreabout">I am a Developer and I love to make frontend Websites</div>
                 <div class="buttons">
-                    <a href="https://i.ibb.co/bLzSTdB/Navy-White-Modern-Professional-Resume-2.jpg" download><button class="btn">Download CV</button></a>
+                    <a href="https://i.ibb.co/bLzSTdB/Navy-White-Modern-Professional-Resume-2.jpg" id="link_download" download="resume"><button class="btn" id="resume_download">Download CV</button></a>
                     <a href="#contact"><button class="btn">Contact Me</button></a>
                 </div> 
             </div>
@@ -60,12 +61,12 @@
             <h2 class="aboutme">About me</h2>
         <h5>
         <p class="descme">
-I am a success driven,determined and enthusiastic frontend developer have knowledge
-of Html,Css,JavaScript and Reacts framework and made many proects using it.
+I am a success driven,determined and enthusiastic mern developer have knowledge
+of Html,Css,JavaScript and Reacts framework,mongodb,express,nodejs and made many proects using it.
 A passionate individual eager to learn new technologies to become a person with 
 deep level of expertise in web developent and other creative fields.
-I have good understanding of Frontend technologies and reacts made many 
-frontend websites using it always wanted to showcase my skills when required.
+I have good understanding of web technologies and reacts made many 
+ websites using it always wanted to showcase my skills when required.
 
         </p> 
         <i class="fa-brands fa-html5"></i>
@@ -257,11 +258,11 @@ buy them by doing payment in payment section
     GitHubCalendar(".calendar", "Paratparshahi", { responsive: true });
 
     // Use a proxy
-    GitHubCalendar(".calendar", "Paratparshahi", {
-       proxy (username) {
-         return fetch(`https://your-proxy.com/github?user=Paratparshahi`)
-       }
-    }).then(r => r.text())
+    // GitHubCalendar(".calendar", "Paratparshahi", {
+    //    proxy (username) {
+    //      return fetch(`https://your-proxy.com/github?user=Paratparshahi`)
+    //    }
+    // }).then(r => r.text())
 
  function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -284,5 +285,6 @@ window.addEventListener("scroll", reveal);
 <script>
     AOS.init();
   </script>
+  <script src="./downloads.js"></script>
 </body>
 </html>
