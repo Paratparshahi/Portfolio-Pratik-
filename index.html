@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -232,14 +233,14 @@ buy them by doing payment in payment section
             
         </div>
         <div class="contact-right">
-            <form action="">
+            <form action="https://formsubmit.co/pratikkumarshahi@gmail.com" method="POST" target="_blank">
                 <label>Name</label>
-                <input type="text" name="Name" placeholder="Your Name" required><br><br>
+                <input type="text" name="Name" placeholder="Your Name" required id="name"><br><br>
                 <label>Email</label>
-                <input type="email" name="email" placeholder="Give the email" required><br><br>
+                <input type="email" name="email" placeholder="Give the email" required id="sender_email"><br><br>
                 <label style="top:0px">Message</label>
-                <textarea rows="4" placeholder="Write Here ..."></textarea><br>
-                <button >Submit</button>
+                <textarea rows="4" placeholder="Write Here ..." id="textarea"></textarea><br>
+                <button  type="submit">Submit</button>
             </form>
         </div>
        
@@ -286,5 +287,20 @@ window.addEventListener("scroll", reveal);
     AOS.init();
   </script>
   <script src="./downloads.js"></script>
+  <script>
+    function Send_Email(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "khoonipratik@gmail.com",
+    Password : "93D9DBE6DF58BDDA99E2A910BC06A0FFD800",
+    To : 'khoonipratikkumarshahi@gmail.com',
+    From : document.getElementById("sender_email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
 </body>
 </html>

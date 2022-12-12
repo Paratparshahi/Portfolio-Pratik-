@@ -444,7 +444,7 @@ body {
     padding: 8px 32px;
     border-radius: 8px;
     margin-left: 20px;
-    color: white;
+    /* color: white; */
     background: none;
 }
 .contact-right textarea{
@@ -727,6 +727,7 @@ body {
 .contact-right{
     margin-top: 10px;
     background: none;
+    
 }
 .contact-left p{
     font-size: 10px;
