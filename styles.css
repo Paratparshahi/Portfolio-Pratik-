@@ -370,7 +370,7 @@ body {
     color: rgb(25, 17, 17);
     width: 300px;
     box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
-    padding: 30px 40px;
+    padding: 20px 30px;
     line-height: 25px;
     border-radius: 5%;
     transition: transform 0.5s;
@@ -395,9 +395,7 @@ body {
 }
 .skillsmain{
     margin-top: 100px;
-    
     text-align: center;
-    
 }
 .skillsmain h2{
     font-size: 45px;
@@ -407,8 +405,6 @@ body {
     font-size: 20px;
     background: none;
 }
-
-
 .btn-sec button{
     color: purple;
     border: 1px solid #ff004f;
@@ -463,7 +459,7 @@ body {
 .contact-right form{
     background: #f0f8ef;
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:800px) {
     .navbar{
         width: 100vw;
         margin: 10px 20px;
@@ -481,6 +477,20 @@ body {
         justify-content: space-around;
         color: aqua;
         
+    }
+    .skills-section div{
+        margin: auto;
+        margin-left: 20px;
+        text-align: center;
+        color: rgb(25, 17, 17);
+        width: 300px;
+        box-shadow: rgb(34, 66, 101) 0px 20px 30px -10px;
+        padding: 10px 10px;
+        line-height: 25px;
+        border-radius: 5%;
+        transition: transform 0.5s;
+        background: #f0f8ef;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     .Github-Stats{
         margin-left: 20%;
