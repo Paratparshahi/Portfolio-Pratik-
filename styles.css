@@ -511,6 +511,7 @@ body {
         font-size: 20px;
         padding: 10px 0;
         font-weight: bold;
+        text-align: end;
     }
     .hello{
         font-size: 40px;
@@ -592,6 +593,13 @@ body {
     height: auto;
     width: 100%;
     top:20%
+}
+.navbar  ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: end;
 }
 }
 @media screen and (max-width:550px) {
