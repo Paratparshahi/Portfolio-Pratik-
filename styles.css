@@ -686,7 +686,7 @@ body {
     padding: 5px 15px;
 }
 #contact{
-    width: 300px;
+    
     margin: 5px;
     background: #f0f8ef;
 
@@ -699,7 +699,7 @@ body {
 .row{
     display: block;
     margin-top: 30px;
-    margin-left: 30%;
+    
     background: none;
 }
 .contact-right input{
