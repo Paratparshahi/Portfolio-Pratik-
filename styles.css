@@ -541,7 +541,7 @@ body {
 .row{
     display: block;
     margin-top: 30px;
-    margin-left: 30%;
+   
     background: none;
 }
 .contact-right input{
@@ -563,6 +563,12 @@ body {
 
 }
 @media screen and (max-width:550px) {
+    *{
+        margin:0;
+        padding:0;
+        background-color: rgba(255, 255, 255, 0.992);
+        width: 100%;
+    }
     
     .container-form{
         margin-top: 100px;
@@ -742,10 +748,10 @@ body {
 
 }
 .contact-left i{
-  margin-right: 15px;
-  font-size: 50px;
-  color: purple;
-  background: none;
+   margin-right: 15px;
+   font-size: 40px;
+   color: purple;
+   background: none;
 }
 .contact-left a{
     background: none;
